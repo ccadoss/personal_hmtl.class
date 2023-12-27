@@ -58,19 +58,19 @@ ul{
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -79,7 +79,7 @@ ul{
   top: 0;
 }
 
-/* Container for image text */
+
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -195,8 +195,7 @@ function myC() {
   </div>
 
  
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
 
   
   <div class="caption-container">
@@ -228,6 +227,74 @@ function myC() {
 </div>
 
  
+
+
+<div class="container">
+
+ 
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="irsyad/is9.jpeg" width="250px" height="">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+     <img src="irsyad/is10.jpeg" width="250px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+   <img src="irsyad/is11.jpeg" width="250px" height="400px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+     <img src="irsyad/is12.jpeg" width="250px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+ <img src="irsyad/is13.jpeg" width="250px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="irsyad/is14.jpeg" height="350px" width="300px">
+  </div>
+
+ 
+  
+
+  
+  <div class="caption-container">
+    <p id="caption">Tiada kata seindah gambar</p>
+
+  </div>
+
+ 
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is9.jpeg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is10.jpeg" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is11.jpeg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is12.jpeg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is13.jpeg" style="width:100%" onclick="currentSlide(5)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is14.jpeg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>
+
+
 <h3 style="color: black;">Media</h3>
 
 <video  style="align-content: center;" width="600" height="400" controls>
@@ -242,6 +309,38 @@ function myC() {
   <source src="video/g1.mp4" type="video/mp4">
 </video>
 <br>
+
+
+ <h3 style="color: black;">Guess the Number Game</h3>
+    <p>Guess a number between 1 and 10</p>
+
+    <div id="result"></div>
+
+    <div id="inputBox">
+        <label for="guessInput">Your Guess:</label>
+        <input type="number" id="guessInput" min="1" max="10">
+        <button onclick="checkGuess()">Submit Guess</button>
+    </div>
+
+    <script>
+       
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+        function checkGuess() {
+            
+            const userGuess = document.getElementById("guessInput").value;
+
+            
+            if (userGuess == randomNumber) {
+                document.getElementById("result").innerHTML = "Congratulations! You guessed the correct number!";
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, try again!";
+            }
+        }
+    </script>
+
+
+
 
 
 
