@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+<style>
+    body {
+      font-family: tahamo, 
+      line-height: 1.6;
+      margin: 20px;
+      background-color: dimgray;
+      background-image: url("irsyad/w.jpg") ;
+
+      
+              }
+ul{
+    list-style-type: none;
+}
+   * {
+  box-sizing: border-box;
+}
+
+
+
+ 
+
+.container {
+  position: relative;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+    
+</style>
+ 
+</head>
+<body>
+
+ 
+ <section>
+    <h2>Gallery</h2>
+
+ <ul>
+  <li><a  href="index.html">Home</a></li>
+  <li><a  href="biodata.html">Biodata</a></li>
+  <li><a href="experience.html">Experience</a></li>
+  <li><a href="education.html">Education</a></li>
+  <li><a href="family.html">Family</a></li>
+ <li><a style="font-family:georgia" href="gallery.html"> <strong>Gallery</strong></a> </li>
+ <li style="float:right"><a class="active" href="contact_me.html">Contact Me</a></li>
+</ul>
+
+
+
+
+<h3 style="color: black;">My Favourite Song</h3>
+
+<p>listen to the song while scrolling</p>
+<audio controls autoplay>
+  <source src="lagu/lagu2.mp3" type="audio/ogg">
+  <source src="lagu/lagu2.mp3" type="audio/mpeg">
+
+</audio>
+
+<p id="myContent"> 1  2  3  4 <br> Denting yang....... </p>
+<button type="button" onclick="myC()">LYRIC </button>
+
+<script>
+function myC() { 
+  document.getElementById("myContent").innerHTML = " 1  2  3  4<br> Denting yang berbunyi dari dinding kamarku <br> Sedarkan diriku dari  lamunan panjang <br> Tak terasa malam kini semakin larut <br> Ku masih terjaga<br> <br> Sayang, kau di mana, aku ingin bersama<br> Aku butuh semua untuk tepiskan rindu<br> Mungkinkah kau di sana merasa yang sama<br> Seperti dinginku di malam ini <br> <br> Rintik gerimis mengundang kekasih di malam ini<br> Kita menari dalam rindu yang indah<br>  Sepi kurasa hatiku saat ini, oh, sayangku <br>  Jika kau di sini, aku tenang  ";
+}
+</script>
+
+
+
+
+<h3 style="color: black;">Photos</h3>
+
+   
+  </section>
+
+
+
+
+<div class="container">
+
+ 
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="irsyad/is3.jpeg" width="250px" height="">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+     <img src="irsyad/is4.jpeg" width="250px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+   <img src="irsyad/is6.jpeg" width="250px" height="400px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+     <img src="irsyad/m1.jpeg" width="250px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+ <img src="irsyad/c11.jpeg" width="250px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="irsyad/c10.jpeg" width="250px">
+  </div>
+
+ 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  
+  <div class="caption-container">
+    <p id="caption"> THESE PHOTOS HAVE A LOT OF MY MEMORIES</p>
+
+  </div>
+
+ 
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is3.jpeg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is4.jpeg" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/is6.jpeg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/m1.jpeg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/c11.jpeg" style="width:100%" onclick="currentSlide(5)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="irsyad/c10.jpeg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>
+
+ 
+<h3 style="color: black;">Media</h3>
+
+<video  style="align-content: center;" width="600" height="400" controls>
+  <source src="video/g3.mp4" type="video/mp4">
+</video>
+<br>
+<video style="align-content: center;" width="500" height="300" controls >
+  <source src="video/g2.mp4" type="video/mp4">
+</video>
+<br>
+<video width="500" height="300" controls>
+  <source src="video/g1.mp4" type="video/mp4">
+</video>
+<br>
+
+
+
+
+<p style="text-align: center;"><strong>Thanks for visiting!</strong></p>
+
+
+
+  <footer>
+        <p style="text-align: center;">&copy; 2023 Irsyad Anas Website </p>
+        
+    </footer>
+</body>
+</html>

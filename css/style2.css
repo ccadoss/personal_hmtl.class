@@ -1,0 +1,91 @@
+h1
+{
+font-family: georgia;
+background-color: lightgray ;
+color: blue;
+text-align: center;
+font-size: 24px;
+font-weight: bold;
+
+}
+address{
+	padding: 10px;
+}
+     nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+    }
+
+
+h2
+{
+    font-family: georgia;
+    color: darkred;
+    font-size: 18px;
+}
+p
+{
+    font-size: 16px;
+	font-family: arial;
+	color: black;
+
+}
+ 
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+th
+{
+	font-size: 16px;
+	font-family: arial;
+	color: black;
+	text-align: left;
+	font-weight: bold;
+	padding: 20px;
+}
+td
+{
+	font-size: 16px;
+	font-family: arial;
+	color: black;
+	text-align: justify;
+}
+
+ a:hover {
+
+      color: gray;
+
+    }
+    .navigation {
+      width: 200px;
+      background-color: lightgray;
+      padding: 20px;
+      
+    }

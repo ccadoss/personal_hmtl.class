@@ -1,0 +1,128 @@
+body
+{
+	background-color: ;
+	background-image: irsyad/w5.jpg;
+	background-repeat: no-repeat;
+
+	
+      
+}
+ header {
+      background-color: skyblue;
+      color: aliceblue;
+      padding: 10px;
+      text-align: center;
+    }
+h1
+{
+	font-family: tahamo ;
+}
+h2
+{
+	color: aliceblue ;
+	background-color: skyblue;
+	font-family: Tahamo;
+	text-align: center;
+}
+h3
+{
+		color: aliceblue ;
+	background-color: skyblue;
+	font-family: Tahamo;
+	text-align: center;
+}
+p
+{
+	color: balck;
+	text-align:justify ;
+	font-size: 17px;
+	font-family:  ;
+
+}
+ section {
+      margin-bottom: 40px;
+      background-color: none;
+    }
+
+h5
+{
+	color: aliceblue;
+	background-color: gray;
+	border: 2px dashed dimgray;
+}
+table, th, td, tr
+{
+	border: 3px solid gray;
+	border-collapse: collapse;
+}
+th
+{
+background-color: skyblue;
+color: aliceblue;
+text-align: center;
+padding: 	2px;
+}
+tr:hover
+{
+	background-color: darkgray;
+
+}
+ img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px; 
+    }
+td
+{
+	text-align: center;
+	padding: 	2px;
+}
+ ul {
+  
+  margin: 0;
+  padding: 100;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: left;
+  background-color: black;
+
+}
+
+
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: black;
+  
+
+
+}
+
+li a:hover {
+  background-color: gray;
+  
+  
+}
+
+      nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+    }
+        footer {
+      text-align: center;
+      padding: 10px;
+      background-color:black;
+      color: darkgray;
+   
